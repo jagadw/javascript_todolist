@@ -1,0 +1,221 @@
+body {
+    background-image: linear-gradient(
+    45deg,
+    hsl(240deg 29% 73%) 0%,
+    hsl(271deg 41% 75%) 11%,
+    hsl(306deg 51% 76%) 22%,
+    hsl(328deg 100% 81%) 33%,
+    hsl(340deg 100% 80%) 44%,
+    hsl(358deg 100% 81%) 56%,
+    hsl(20deg 100% 75%) 67%,
+    hsl(35deg 100% 68%) 78%,
+    hsl(47deg 100% 60%) 89%,
+    hsl(55deg 100% 50%) 100%
+    );
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    color: #111;
+}
+
+.wapper {
+    width: 350px;
+    margin: auto;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+header i {
+    color: #f44336;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #fff;
+    padding: 10px;
+    border-bottom: 5px solid #50dd67;
+}
+
+.header > div {
+    text-transform: uppercase;
+}
+
+.today {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.month_year {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    color: #888;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.date {
+    font-weight: 900;
+    font-size: 2em;
+    margin-right: 6px;
+}
+
+.year {
+    line-height: 16px;
+}
+
+.time {
+    font-size: 12px;
+    font-weight: 900;
+    justify-self: end;
+}
+
+.todo_list {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    background: #fff;
+}
+
+.listItem {
+    display: grid;
+    grid-template-columns: 9fr 1fr 1fr;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.listItem p {
+    font-weight: 500;
+}
+
+.listItem p small {
+    font-weight: lighter;
+}
+
+.listItem span {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    align-self: center;
+}
+
+.listItem a {
+    align-self: center;
+    text-decoration: none;
+    color: #f44336;
+}
+
+.listItem.complete {
+    color: #999;
+}
+
+.listItem.complete span {
+    background-color: #50dd67;
+    border-color: #2aba41;
+}
+
+/* .menuButton {
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #03a9f4;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2em;
+    margin-left: 150px;
+    margin-top: -20;
+    cursor: pointer;
+} */
+
+.addButton {
+    display: block;
+    /* position: absolute; */
+    width: 80px;
+    height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #50dd67;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2em;
+    margin: auto;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* .deleteButton {
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #f44336;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2em;
+    margin-left: 150px;
+    margin-top: -20;
+    cursor: pointer;
+} */
+
+#addtodomenu {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#addtodomenubox {
+    min-width: 15%;
+    padding: 20px;
+    padding-top: -20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+#addtodomenubox a {
+    color: #fff;
+    padding: 5px;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#button-x {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.click {
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #03a9f4;
+    border: none;
+}
+
+.newtask {
+    border-radius: 5px;
+    padding: 10px;
+    border-color: #50dd67;
+}
+
+.newtime {
+    border-radius: 5px;
+    padding: 10px;
+    border-color: #2aba41;
+}

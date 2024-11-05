@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <title>Project Akhir</title>
+</head>
+<body>
+    <div class="wapper">
+
+        <header>
+            <h1><i class="fa fa-sharp fa fa-light fa fa-list-check"></i> JUST DO IT.</h1>
+        </header>
+
+        <div class="header">
+
+            <div class="today">
+                <span class="date" id="day"></span>
+                <span class="month_year">
+                    <span class="month" id="month"></span>
+                    <span class="year" id="year"></span>
+                </span>
+            </div>
+            <span class="time" id="time"></span>
+        </div>
+
+        <div class="todo_list">
+            <!-- <div class="listItem">
+                <p>
+                    Title Here <br>
+                    <small>23 Mar 2023</small>
+                </p>
+                <a href=""><i class="fa fa-edit"></i></a>
+                <a href=""><i class="fa fa-trash"></i></a>
+                <span></span>
+            </div> -->
+
+            <!-- <div class="listItem complete">
+                <p>
+                    Completed <br>
+                    <small>23 Mar 2023</small>
+                </p>
+                <a href=""><i class="fa fa-edit"></i></a>
+                <a href=""><i class="fa fa-trash"></i></a>
+                <span class=""></span>
+            </div> -->
+
+        </div>
+
+        <div class="btnContainer">
+            <span class="addButton">
+                <i class="fa fa-plus"></i>
+            </span>
+            <!-- <span class="deleteButton">
+                <i class="fa fa-trash"></i>
+            </span>
+            <span class="menuButton">
+                <i class="fa fa-bars"></i>
+            </span> -->
+        </div>
+        <div id="addtodomenu">
+            <div id="addtodomenubox">
+                <div id="button-x">
+                    <h3>Add task</h3>
+                    <a href="#addtodomenu">&times;</a>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Add your task here" class="newtask"><br><br>
+                    <input type="time" placeholder="Add time" class="newtime"><br><br>
+                    <button class="click" type="submit">Add</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
